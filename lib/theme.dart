@@ -6,7 +6,7 @@ import 'constants.dart';
 // Our light/Primary Theme
 ThemeData themeData(BuildContext context) {
   return ThemeData(
-    appBarTheme: appBarTheme,
+    appBarTheme: AppBarTheme(color: Color(0xFFeeeeee), elevation: 0, brightness: Brightness.light),
     primaryColor: kPrimaryColor,
     accentColor: kAccentLightColor,
     scaffoldBackgroundColor: Colors.white,
@@ -32,8 +32,8 @@ ThemeData darkThemeData(BuildContext context) {
   return ThemeData.dark().copyWith(
     primaryColor: kPrimaryColor,
     accentColor: kAccentDarkColor,
-    scaffoldBackgroundColor: Color(0xFF0D0C0E),
-    appBarTheme: appBarTheme,
+    scaffoldBackgroundColor: Color(0xFF222222),
+    appBarTheme: AppBarTheme(color: Color(0xFF111111), elevation: 0, brightness: Brightness.dark),
     colorScheme: ColorScheme.light(
       secondary: kSecondaryDarkColor,
       surface: kSurfaceDarkColor,
